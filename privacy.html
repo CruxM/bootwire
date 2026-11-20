@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bootwire Privacy policy</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<nav><a href="index.html">Bootwire</a><a href="privacy.html">Privacy policy</a><a href="refund.html">Refund policy</a></nav>
+<h1>Privacy policy</h1>
+<p>Effective date: 20 November 2026</p>
+<p>App: Bootwire (Android package app.bootwire)</p>
+<p>Developer: Wire Studio, India</p>
+<p>Contact: rmayank165@gmail.com</p>
+<p>This policy explains what Bootwire keeps on your phone, what it sends over the internet and to whom, and what the developer receives. The app shows this same text under About, Privacy policy.</p>
+<h2>The short version</h2>
+<ul>
+<li>Bootwire has no account, no sign-in, no ads, and no analytics, advertising or crash-reporting code.</li>
+<li>The developer runs no servers and receives none of your data.</li>
+<li>Your activity history, downloaded images and settings stay on your phone.</li>
+<li>Bootwire only connects to the places listed in section 2, such as Microsoft's download page when you ask for Windows, and Google Play when you buy Pro.</li>
+<li>Bootwire erases only the USB drive or memory card you confirm. It cannot reach your phone's own storage through USB.</li>
+</ul>
+<h2>1. What Bootwire keeps on your phone</h2>
+<p>Everything below is stored in Bootwire's own storage on your phone. None of it is sent to the developer.</p>
+<ul>
+<li><strong>Activity history:</strong> the last 50 things Bootwire did, such as writing, formatting, checking or downloading. Each entry has the time, what was written (for example "Windows 11 installer"), the drive's name, the amount written, how long it took, whether it was checked, and any error message. You can clear it in the Activity tab.</li>
+<li><strong>Downloaded images:</strong> files you download in Bootwire, such as a Windows ISO or a Linux image, are saved in Bootwire's own folder on your phone (Android/data/app.bootwire). So are copies you ask for of a picked file (see "Files you pick"). They stay until you delete them or uninstall the app.</li>
+<li><strong>Microsoft's download page:</strong> the page opens inside Bootwire using Android System WebView, which keeps the cookies, site data and cache that Microsoft's site sets, as a browser would.</li>
+<li><strong>Microsoft's checksum list:</strong> the SHA-256 checksums Microsoft publishes on that page, kept so Bootwire can check that a Windows image is one Microsoft released.</li>
+<li><strong>Settings:</strong> small things such as whether you've seen the introduction.</li>
+<li><strong>Pro status:</strong> whether this Google account owns Bootwire Pro, so Pro keeps working offline.</li>
+<li><strong>Drive backups (Pro):</strong> when you back up a drive, Bootwire saves a copy of everything on it to a file in the place you pick with Android's file picker (for example your Downloads folder or a cloud storage app you choose). The file holds whatever was on the drive and stays until you delete it. For a plain (uncompressed) backup, Bootwire also keeps a short note of the file's name, size and SHA-256 checksum, so it can check the file hasn't been damaged before restoring it.</li>
+<li><strong>Diagnostics log (Pro):</strong> a technical record of what Bootwire saw and did in this session, such as each drive's maker, model and size, the checks and writes, and any errors. It's kept in memory only and is gone when Android closes the app. It leaves your phone only if you copy it or share it yourself, to an app and person you choose.</li>
+</ul>
+<p><strong>Files you pick:</strong> when you choose an image file that is already on your phone, Android's file picker gives Bootwire access to that one file only. Bootwire reads it where it is and never sends it anywhere. If the file can't be read that way (some cloud storage apps) or is a zipped Windows image, Bootwire offers to copy or unpack it into its own folder, and does so only if you tap that button.</p>
+<p><strong>Settings written to a drive:</strong> if you set up a Raspberry Pi card's first start, Bootwire writes what you enter (hostname, user name and password, SSH settings and keys, Wi-Fi name and password, Wi-Fi country, time zone, keyboard) to the card's boot partition, as Raspberry Pi Imager does. The user password is written only as a one-way hash, but the Wi-Fi password is written as Raspberry Pi OS needs it, so treat the card like a note with your Wi-Fi password on it until the Pi has started. Windows setup options (Pro) put an answer file on the drive, which holds the local account name if you choose one. Bootwire keeps these settings in memory only while you prepare that drive, and doesn't save them on your phone.</p>
+<p><strong>Battery:</strong> before a long download or write, Bootwire reads the battery level to warn you if it's low. This needs no permission, and the level isn't stored.</p>
+<p><strong>USB drives and memory cards:</strong> to show you which drive is which, Bootwire reads each connected drive's maker, model, size and partition labels. Android asks your permission before Bootwire can use a drive. Bootwire writes only to the drive you confirm, after you press and hold. The drive check writes test patterns to a few spots and puts the original data back. The full drive test (Pro) either only reads the drive, or, if you choose the erasing version after a press and hold, writes test patterns over the whole drive and deletes what was on it. Nothing read from a drive leaves your phone.</p>
+<p><strong>Android backup:</strong> if Android backup is on, Android may copy Bootwire's activity history, settings, Microsoft's checksum list, the notes about plain drive backups and Pro status to your Google account's backup (end-to-end encrypted when your phone has a screen lock). Downloaded images and Microsoft's site data are not backed up. You can turn backup off in Android's settings.</p>
+<h2>2. What goes over the internet, and to whom</h2>
+<ul>
+<li><strong>Microsoft:</strong> when you choose Windows, Bootwire opens Microsoft's own download page (microsoft.com) inside the app and downloads the file you choose from Microsoft's servers. Microsoft receives what any website receives from a browser, such as your IP address, the browser's identifying information and the cookies its site sets. Microsoft's privacy statement applies to its site.</li>
+<li><strong>Publishers of tools and images:</strong> when you tap Download for a Linux, rescue, FreeDOS or Raspberry Pi image in the library, Bootwire downloads the file, and the checksum list the publisher publishes for it, from the publisher's official server (or a mirror the publisher sends the download to). If you open the publisher's website from Bootwire instead, it opens in your browser. Multiboot (Pro) downloads the official Ventoy release from the Ventoy project's GitHub releases. Those servers receive the usual details of a download request, including your IP address. Their own privacy policies apply.</li>
+<li><strong>Google Play:</strong> buying and restoring Pro goes through Google Play, which handles the payment. The Google Play Billing Library in Bootwire talks to the Google Play app on your phone to do this. Google's privacy policy applies.</li>
+</ul>
+<p>Bootwire does not send your data anywhere else, and the developer has no access to any of this traffic. Downloads from Microsoft and the publishers use HTTPS.</p>
+<h2>3. What the developer collects</h2>
+<p>Nothing. The developer receives no personal data, no usage data, no crash reports, no advertising identifier and no account details, because Bootwire has no server to send them to. If you email the developer, your email and anything you include are used only to answer you.</p>
+<h2>4. Permissions</h2>
+<ul>
+<li><strong>USB devices:</strong> to read and write the USB drive or memory card reader you plug in. Android asks you first for each device.</li>
+<li><strong>Internet and network status:</strong> to download images and checksums and to show Microsoft's page.</li>
+<li><strong>Notifications:</strong> to show the progress of a write, check or download, with a Stop button.</li>
+<li><strong>Foreground service and wake lock:</strong> so a write, check or download carries on while the screen is off. They run only while a job you started is running.</li>
+<li><strong>Google Play billing:</strong> to buy and restore Pro through Google Play.</li>
+</ul>
+<p>Bootwire does not ask for storage, location, camera, microphone, contacts or accessibility permissions.</p>
+<h2>5. Purchases</h2>
+<p>Bootwire Pro is a one-time purchase through Google Play. Google Play processes the payment, and Bootwire never sees your payment details. Bootwire asks Google Play only whether your Google account owns Pro. To restore Pro on another phone, sign in with the same Google account and tap Restore purchase.</p>
+<h2>6. Children</h2>
+<p>Bootwire is a tool for repairing PCs and erasing drives, made for adults. It is not directed at children, and it collects no information from anyone.</p>
+<h2>7. Your choices</h2>
+<ul>
+<li>Clear the activity history in the Activity tab.</li>
+<li>Delete downloaded images, or clear Bootwire's storage in Android's app settings.</li>
+<li>Uninstall Bootwire. This removes everything listed in section 1 from your phone.</li>
+</ul>
+<p>Because the developer holds no data about you, there is nothing to request, correct or delete on the developer's side. If you have a question about your data, write to rmayank165@gmail.com.</p>
+<h2>8. Changes to this policy</h2>
+<p>If this policy changes, the effective date above changes too. The current version is always at https://cruxm.github.io/bootwire/privacy.html and inside the app. If a change affects what Bootwire sends over the internet, the release notes on Google Play will say so.</p>
+<h2>9. Contact</h2>
+<p>Wire Studio, rmayank165@gmail.com</p>
+</main></body></html>
